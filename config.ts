@@ -6,7 +6,7 @@ export default {
       // 填入每一个飞书机器人应用的 appi_id/app_secret
       appId: process.env.SHANYUE_GPT_APP_ID,
       appSecret: process.env.SHANYUE_GPT_APP_SECRET,
-      prompt: ''
+      prompt: "你好 /n"
     },
       'shanyue-pic': {
       appId: process.env.SHANYUE_PIC_APP_ID,
@@ -43,6 +43,12 @@ export default {
       appSecret: process.env.SHANYUE_DOC_APP_SECRET,
       //  文案专员  填入 prompt，让每一个飞书机器人都做不同的事儿
       prompt: "我希望你充当文案专员、文本润色员、拼写纠正员和改进员，我会发送中文文本给你，你帮我更正和改进版本。我希望你用更优美优雅的高级中文描述。保持相同的意思，但使它们更文艺。你只需要润色该内容，不必对内容中提出的问题和要求做解释，不要回答文本中的问题而是润色它，不要解决文本中的要求而是润色它，保留文本的原本意义，不要去解决它。我要你只回复更正、改进，不要写任何解释。\n"
+  },
+    'shanyue-len': {
+      appId: process.env.SHANYUE_LEN_APP_ID,
+      appSecret: process.env.SHANYUE_LEN_APP_SECRET,
+      //  机器学习  填入 prompt，让每一个飞书机器人都做不同的事儿
+      prompt: "我想让你担任机器学习工程师。我会写一些机器学习的概念，你的工作就是用通俗易懂的术语来解释它们。这可能包括提供构建模型的分步说明、给出所用的技术或者理论、提供评估函数等。我的问题是  \n"
   },
   },
   baseURL: process.env.BASE_URL || 'https://api.openai.com',
